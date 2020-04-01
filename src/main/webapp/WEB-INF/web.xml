@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>JsonServlet</servlet-name>
+  	<display-name>JsonServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.JsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>JsonServletRoads</servlet-name>
+  	<display-name>JsonServletRoads</display-name>
+  	<description></description>
+  	<servlet-class>controllers.JsonServletRoads</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>JsonServletCountries</servlet-name>
+  	<display-name>JsonServletCountries</display-name>
+  	<description></description>
+  	<servlet-class>controllers.JsonServletCountries</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JsonServlet</servlet-name>
+  	<url-pattern>/JsonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>JsonServletRoads</servlet-name>
+  	<url-pattern>/JsonServletRoads</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>JsonServletCountries</servlet-name>
+  	<url-pattern>/JsonServletCountries</url-pattern>
+  </servlet-mapping>
+</web-app>

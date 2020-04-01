@@ -1,0 +1,137 @@
+create database Worlds;
+use Worlds;
+
+CREATE TABLE Countries(
+   ID INT,
+   Country_Name VARCHAR(255),
+   PRIMARY KEY (ID)
+);
+CREATE TABLE States(
+   ID INT,
+   States_Name VARCHAR(255),
+   Countries_ID INT,
+   PRIMARY KEY (ID)
+);
+CREATE TABLE Roads(
+   ID INT,
+   Roads_Name VARCHAR(255),
+   States_ID INT,
+   PRIMARY KEY (ID)
+);
+
+insert into Countries values(1, 'India');
+insert into Countries values(2, 'SouthAfrica');
+insert into Countries values(3, 'Srilanka');
+insert into Countries values(4, 'USA');
+insert into Countries values(5, 'Canada');
+insert into Countries values(6,  'Austrelia');
+insert into Countries values(7, 'England');
+
+insert into States values(1, 'West Bengal', 1);
+insert into States values(2, 'Delhi', 1);
+insert into States values(3, 'Mumbai', 1);
+insert into States values(4, 'Western Cape', 2);
+insert into States values(5, 'Eastern Cape', 2);
+insert into States values(6,  'Northern Cape', 2);
+insert into States values(7, 'Kandy', 3);
+insert into States values(8, 'Trincomalee', 3);
+insert into States values(9, 'Anuradhapura', 3);
+insert into States values(10, 'Alabama', 4);
+insert into States values(11, 'Arizona', 4);
+insert into States values(12, 'California', 4);
+insert into States values(13,  'Manitoba', 5);
+insert into States values(14, 'Ontario', 5);
+insert into States values(15, 'British Columbia', 5);
+insert into States values(16, 'City of Lismore', 6);
+insert into States values(17, 'Wollongong', 6);
+insert into States values(18, 'Newcastle', 6);
+insert into States values(19, 'Cambridge', 7);
+insert into States values(20,  'Canterbury', 7);
+insert into States values(21, 'Chester', 7);
+
+insert into Roads values(1, 'West Bengal-ROAD-1', 1);
+insert into Roads values(2, 'West Bengal-ROAD-2', 1);
+insert into Roads values(3, 'West Bengal-ROAD-3', 1);
+
+insert into Roads values(4, 'Delhi-ROAD-1', 2);
+insert into Roads values(5, 'Delhi-ROAD-2', 2);
+insert into Roads values(6, 'Delhi-ROAD-3', 2);
+
+insert into Roads values(7, 'Mumbai-ROAD-1', 3);
+insert into Roads values(8, 'Mumbai-ROAD-2', 3);
+insert into Roads values(9, 'Mumbai-ROAD-3', 3);
+
+insert into Roads values(10, 'Western Cape-ROAD-1', 4);
+insert into Roads values(11, 'Western Cape-ROAD-2', 4);
+insert into Roads values(12, 'Western Cape-ROAD-3', 4);
+
+insert into Roads values(13, 'Eastern Cape-ROAD-1', 5);
+insert into Roads values(14, 'Eastern Cape-ROAD-2', 5);
+insert into Roads values(15, 'Eastern Cape-ROAD-3', 5);
+
+insert into Roads values(16,  'Northern Cape-ROAD-1', 6);
+insert into Roads values(17,  'Northern Cape-ROAD-2', 6);
+insert into Roads values(18,  'Northern Cape-ROAD-3', 6);
+
+insert into Roads values(19, 'Kandy-ROAD-1', 7);
+insert into Roads values(20, 'Kandy-ROAD-2', 7);
+insert into Roads values(21, 'Kandy-ROAD-3', 7);
+
+insert into Roads values(22, 'Trincomalee-ROAD-1', 8);
+insert into Roads values(23, 'Trincomalee-ROAD-2', 8);
+insert into Roads values(24, 'Trincomalee-ROAD-3', 8);
+
+insert into Roads values(25, 'Anuradhapura-ROAD-1', 9);
+insert into Roads values(26, 'Anuradhapura-ROAD-2', 9);
+insert into Roads values(27, 'Anuradhapura-ROAD-3', 9);
+
+insert into Roads values(28, 'Alabama-ROAD-1', 10);
+insert into Roads values(29, 'Alabama-ROAD-2', 10);
+insert into Roads values(30, 'Alabama-ROAD-3', 10);
+
+insert into Roads values(31, 'Arizona-ROAD-1', 11);
+insert into Roads values(32, 'Arizona-ROAD-2',11);
+insert into Roads values(33, 'Arizona-ROAD-3', 11);
+
+insert into Roads values(34, 'California-ROAD-1', 12);
+insert into Roads values(35, 'California-ROAD-2', 12);
+insert into Roads values(36, 'California-ROAD-3', 12);
+
+insert into Roads values(37,  'Manitoba-ROAD-1', 13);
+insert into Roads values(38,  'Manitoba-ROAD-2', 13);
+insert into Roads values(39,  'Manitoba-ROAD-3', 13);
+
+insert into Roads values(40, 'Ontario-ROAD-1', 14);
+insert into Roads values(41, 'Ontario-ROAD-2', 14);
+insert into Roads values(42, 'Ontario-ROAD-3', 14);
+
+insert into Roads values(43, 'British Columbia-ROAD-1', 15);
+insert into Roads values(44, 'British Columbia-ROAD-2', 15);
+insert into Roads values(45, 'British Columbia-ROAD-3', 15);
+
+insert into Roads values(46, 'City of Lismore-ROAD-1', 16);
+insert into Roads values(47, 'City of Lismore-ROAD-2', 16);
+insert into Roads values(48, 'City of Lismore-ROAD-3', 16);
+
+insert into Roads values(49, 'Wollongong-ROAD-1', 17);
+insert into Roads values(50, 'Wollongong-ROAD-2', 17);
+insert into Roads values(51, 'Wollongong-ROAD-2-3', 17);
+
+insert into Roads values(52, 'Newcastle-ROAD-1', 18);
+insert into Roads values(53, 'Newcastle-ROAD-2', 18);
+insert into Roads values(54, 'Newcastle-ROAD-3', 18);
+
+insert into Roads values(55, 'Cambridge-ROAD-1', 19);
+insert into Roads values(56, 'Cambridge-ROAD-2', 19);
+insert into Roads values(57, 'Cambridge-ROAD-3', 19);
+
+insert into Roads values(58,  'Canterbury-ROAD-1', 20);
+insert into Roads values(59,  'Canterbury-ROAD-2', 20);
+insert into Roads values(60,  'Canterbury-ROAD-3', 20);
+
+insert into Roads values(61, 'Chester-ROAD-1', 21);
+insert into Roads values(62, 'Chester-ROAD-2', 21);
+insert into Roads values(63, 'Chester-ROAD-3', 21);
+
+
+select * from roads;
